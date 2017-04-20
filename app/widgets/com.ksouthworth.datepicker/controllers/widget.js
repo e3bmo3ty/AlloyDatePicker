@@ -54,6 +54,7 @@ function showDatePicker() {
 		/* The Android picker will be a pop-up
 		 * dialog. */
 		$.picker.showDatePickerDialog({
+			minDate: args.minDate || null,
 			callback : function(e) {
 				if (e.cancel) {
 					Ti.API.info('User canceled dialog');
